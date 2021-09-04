@@ -109,10 +109,14 @@ class MainActivity : AppCompatActivity() {
         animator.repeatMode = ObjectAnimator.REVERSE
         animator.disableViewDuringAnimation(scaleButton)
         animator.start()
-
     }
 
     private fun fader() {
+        val animator = ObjectAnimator.ofFloat(star, View.ALPHA, 0f)
+        animator.repeatCount = 1
+        animator.repeatMode = ObjectAnimator.REVERSE
+        animator.disableViewDuringAnimation(fadeButton)
+        animator.start()
     }
 
     private fun colorizer() {
