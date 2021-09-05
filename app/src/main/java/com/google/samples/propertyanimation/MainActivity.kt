@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun colorizer() {
         val backgroundColorKey = "backgroundColor"
-        val animator = ObjectAnimator.ofArgb(star.parent, backgroundColorKey, Color.BLACK, Color.RED)
+        val animator = ObjectAnimator.ofArgb(star.parent as FrameLayout, backgroundColorKey, Color.BLACK, Color.RED)
         animator.duration = 500
         animator.repeatCount = 1
         animator.repeatMode = ObjectAnimator.REVERSE
